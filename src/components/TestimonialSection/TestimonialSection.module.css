@@ -1,0 +1,45 @@
+.outerContainer{
+    margin-top: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .heading {
+        font-size: 36px;
+        font-weight: 700;
+        color: #242524FF;
+        text-align: center;
+    }
+
+    .tagLine {
+        font-weight: 400;
+        color: #8C8D8BFF;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding: 0em 1em;
+    }
+    .innerContainer{
+        margin-top: 2rem;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        padding: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .outerContainer {
+        .innerContainer {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .outerContainer {
+        .innerContainer {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

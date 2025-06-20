@@ -1,0 +1,75 @@
+.card {
+  background-color: white;
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* shadow-md */
+  padding: 1.5rem; /* p-6 */
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* hover:shadow-lg */
+}
+
+.iconColumn {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconWrapper {
+  background-color: white; /* bg-green-100 */
+  padding: 1rem; /* p-4 */
+  border-radius: 9999px; /* rounded-full */
+}
+
+.icon {
+  width: 2rem; /* w-8 */
+  height: 2rem; /* h-8 */
+  color: #1e40a1; /* text-green-600 */
+}
+
+.textColumn {
+  flex: 1;
+  margin-left: 1rem; /* ml-4 */
+}
+
+.title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: #111827; /* text-gray-900 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.description {
+  color: #4b5563; /* text-gray-600 */
+  font-size: 0.875rem; /* text-sm */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 375px) {
+  .card{
+    .title{
+      font-size: 1rem;
+    }
+    .description{
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+    .card{
+      min-width: 500px;
+    }
+}
+
+@media (min-width: 1421px) {
+    .card{
+      min-width: 608px;
+    }
+}

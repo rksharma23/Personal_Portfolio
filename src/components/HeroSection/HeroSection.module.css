@@ -1,0 +1,66 @@
+.hero_section{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .heading{
+        font-size: 4.5rem;
+        font-weight: 800;
+        color: #242524FF;
+        line-height: 1em;
+    }
+    .tagLine{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #8C8D8BFF;
+    }
+    .description{
+        /* font-size: 18px; */
+        line-height: 29px;
+        font-weight: 400;
+        color: #242524FF;
+        max-width: 50%;
+    }
+    .exploreBtn{
+        background-color: #1e40af;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover{
+            background-color: #2563eb;
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    }
+    .user_profile img{
+        margin-top: 2rem;
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        border: 4px solid #0056B3FF;
+        box-shadow: 0px 0px 1px #171a1f12, 0px 0px 2px #171a1f1F;
+    }
+}
+
+@media (max-width:768px) {
+    .hero_section{
+        .description{
+            max-width: 80%;
+        }
+    }
+}
+@media (max-width:425px) {
+    .hero_section{
+        .heading{
+            font-size: 3rem;
+        }
+    }
+}

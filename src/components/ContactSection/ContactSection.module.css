@@ -1,0 +1,29 @@
+.outerContainer{
+    margin-top: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .heading {
+        font-size: 48px;
+        font-weight: 700;
+        color: #242524FF;
+    }
+
+    .tagLine {
+        font-weight: 400;
+        color: #8C8D8BFF;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        padding: 0em 2em;
+    }
+}
+
+@media (max-width:601px) {
+    .outerContainer{
+        .heading{
+            font-size: 36px;
+        }
+    }
+}
