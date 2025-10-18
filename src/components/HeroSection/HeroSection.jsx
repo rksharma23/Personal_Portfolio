@@ -1,5 +1,5 @@
 import styles from "./HeroSection.module.css";
-import profile from '../../assets/profile.jpg'
+import profile from '../../assets/profile_new.jpg'
 function HeroSection() {
   return (
     <div className={styles.hero_section}>
