@@ -1,0 +1,22 @@
+.container{
+    min-width: 224px;
+    min-height: 114px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    &:hover{
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* hover:shadow-lg */
+    }
+    .icon{
+        color: #1e40a1;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .title{
+        font-weight: 600;
+    }
+}
